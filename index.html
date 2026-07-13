@@ -18,6 +18,41 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg bg-white pt-2 pb-4 shadow-sm">
+      <div class="container">
+        <div class="navbar-brand d-flex align-items-center justify-content-center" href="#">
+          <div class="web-icon me-2 d-flex align-items-center justify-content-center shadow-sm">
+<i class="fa-solid fa-utensils" style="color: rgb(255, 255, 255);"></i>
+          </div>
+          <div class="web-name">
+            <h1 class="fs-4 fw-bold m-0">What's for Dinner</h1>
+            <p class="p-color m-0"> Your daily meal inspiration</p>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+          </ul>
+          <ul class="navbar-nav d-flex gap-2">
+    <li><i class="fa-solid fa-bookmark fa-lg pe-2 me-3" style="color: rgb(74, 85, 101);"></i><span class="ms-2 d-none toggle-t">Saved Recipes</span></li>
+    <li><i class="fa-solid fa-clock-rotate-left fa-lg pe-2 me-3" style="color: rgb(74, 85, 101);"></i><span class="ms-2 d-none toggle-t">Recent</span></li>
+    <li><i class="fa-solid fa-gear fa-lg pe-2 me-3" style="color: rgb(74, 85, 101);"></i><span class="ms-2 d-none toggle-t">Settings</span></li>
+    <div class="profile d-flex"><img src="./images/imgi_1_avatar-4.jpg" alt="avatar"> <span class="ms-2 d-none toggle-t">Profile</span></div>
+    </ul>
+        </div>
+      </div>
+    </nav>
     <main>
       <div class="hero">
         <div class="container py-5">
@@ -376,28 +411,56 @@
                   <div class="tab-pane fade" id="tips" role="tabpanel">
                     <ul class="list-unstyled">
                       <li class="step-item mb-2">
-                        <span class="rounded-circle mx-2"><i class="fa-solid fa-check fa-2xs" style="color: rgb(255, 255, 255);"></i></span>
-Use cold, crisp lettuce for best texture
+                        <span class="rounded-circle mx-2"
+                          ><i
+                            class="fa-solid fa-check fa-2xs"
+                            style="color: rgb(255, 255, 255)"
+                          ></i
+                        ></span>
+                        Use cold, crisp lettuce for best texture
                       </li>
                       <li class="step-item mb-2">
-                        <span class="rounded-circle mx-2"><i class="fa-solid fa-check fa-2xs" style="color: rgb(255, 255, 255);"></i></span>
-Make homemade croutons for better flavor
+                        <span class="rounded-circle mx-2"
+                          ><i
+                            class="fa-solid fa-check fa-2xs"
+                            style="color: rgb(255, 255, 255)"
+                          ></i
+                        ></span>
+                        Make homemade croutons for better flavor
                       </li>
                       <li class="step-item mb-2">
-                        <span class="rounded-circle mx-2"><i class="fa-solid fa-check fa-2xs" style="color: rgb(255, 255, 255);"></i></span>
-Add grilled chicken for a complete meal
+                        <span class="rounded-circle mx-2"
+                          ><i
+                            class="fa-solid fa-check fa-2xs"
+                            style="color: rgb(255, 255, 255)"
+                          ></i
+                        ></span>
+                        Add grilled chicken for a complete meal
                       </li>
                       <li class="step-item mb-2">
-                        <span class="rounded-circle mx-2"><i class="fa-solid fa-check fa-2xs" style="color: rgb(255, 255, 255);"></i></span>
-Don't dress salad until ready to serve
+                        <span class="rounded-circle mx-2"
+                          ><i
+                            class="fa-solid fa-check fa-2xs"
+                            style="color: rgb(255, 255, 255)"
+                          ></i
+                        ></span>
+                        Don't dress salad until ready to serve
                       </li>
-          
                     </ul>
                   </div>
                 </div>
-                <hr/>
+                <hr />
 
-                <button class="btn check-btn text-white fw-bold rounded-3 py-2 px-2"> <span><i class="fa-solid fa-repeat mx-2" style="color: rgb(255, 255, 255);"></i></span>Try Another Recipe</button>
+                <button
+                  class="btn check-btn text-white fw-bold rounded-3 py-2 px-2"
+                >
+                  <span
+                    ><i
+                      class="fa-solid fa-repeat mx-2"
+                      style="color: rgb(255, 255, 255)"
+                    ></i></span
+                  >Try Another Recipe
+                </button>
               </div>
             </div>
           </div>
