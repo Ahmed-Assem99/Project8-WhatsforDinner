@@ -2,7 +2,7 @@
 .hero{
     background-color: #FFFBEA;
     height: 100vh;
-    .row{
+    .main-row{
 
             margin: 0;
             box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.175) !important;
@@ -38,6 +38,7 @@
         height: 100%;
         border-top-right-radius: 24px;
         border-bottom-right-radius: 24px;
+        padding: 24px 36px;
         .menu-head{
             .d-g{
                 background-color: #DCFCE6;
@@ -62,8 +63,110 @@
                 background-color: #FFD6A8;
             }
         }
-    }
+        .menu-items{
+            .nav-tabs{
+                border: 0;
+            }
+            .nav-tabs .nav-link{
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                border: none;
+                color: #6A7282;
+                font-weight: 500;
+            }
+            .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+                border: none;
+            }
+            .nav-tabs .nav-link:hover{
+                color: #4b515e;
+                i{
+              color: #4b515e; ;
+                }
+            }
+            .nav-tabs .nav-link:focus,.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+                color:#F64900;
+                     border-bottom: 2px solid #F64900 !important;
+                i{
+                    color: #F64900 !important;
+                }
+               
+                
+            }
+            hr{
+                opacity: 0.1;
+            }
+            .tab-content{
+                height: 380px;
+                padding: 24px;
+            #ingredients{
+                background-color: #FFF9EB;
+                border-radius: 24px;
+                padding: 24px;
+                span{
+                    background-color: #FF6900;
+                    padding: 3px 7px;
+                    border-radius: 50%;
+                    font-size: 12px;
+                }
+            }
+            #instructions{
+                span{
+                    padding: 12px 20px;
+                    border-radius: 18px;
+                                        background-color: #FF6900;
+                }
+            }
+            #nutrition{
+                .icon{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 12px;
+                }
+                .icon-1{
+                    background-color: #FFEDD4;
+                }
+                .icon-2{
+background-color: #DBEAFF;
+                }
+                .icon-3{
+background-color: #FFF9C2;
+                }
+                .icon-4{
+                    background-color: #FFE2E2;
+                }
+                .icon-5{
+                   background-color: #DCFCE6; 
+                }
+                .icon-6{
+                    background-color: #FCE7F4;
+                }
+            }
+            #tips{
+                li{
+                    background-color: #FFFBEA;
+                    border-radius: 24px;
+                    border-left: 4px solid #FFBA00;
+                    padding: 24px 12px;
+                    span{
+                        background-color: #E17100;
+                        padding: 2px 6px;
+                    }
+                }
+            }
+        }
+        }
 
+
+    }
+.check-btn{
+    background: linear-gradient(to right,#FF6800 0%,#FF4E1C 50%,#FB3035 80%);
+    transition: all 0.3s ease;
+}
+.btn:hover{
+transform: scale(1.1) !important;
+background: linear-gradient(to right,#F54500 0%,#EB1800 50%)
+
+}
 }
     .p-color{
         color: #6A7282;
