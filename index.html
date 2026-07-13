@@ -19,7 +19,144 @@
   </head>
   <body>
 
+<main>
+  <div class="hero">
+<div class="container py-5">
+<div
+  class="row justify-content-center align-items-center g-0 shadow-lg"
+>
+  <div class="hero-l col-md-12 col-lg-5 position-relative">
+    <img src="./images/cesar.avif" alt="">
+    <div class="img-data position-absolute d-flex bg-white shadow-sm justify-content-center">
+      <div class="d-flex">
+              <div class="ms-2 d-flex flex-column align-items-center me-4 pe-5">
+        <i class="fa-solid fa-clock fa-xl mb-3" style="color: rgb(255, 105, 0);"></i>
+      <p class="m-0 py-1 p-color">Prep Time</p>
+    <p class="fw-bold m-0">15min</p>
+  </div>
+      <div class="d-flex flex-column align-items-center me-4 pe-5">
+        <i class="fa-solid fa-fire-burner fa-xl mb-3" style="color: rgb(251, 43, 55);"></i>
+      <p class="m-0 py-1 p-color">Cook Time</p>
+    <p class="fw-bold m-0">0min</p>
+      </div>
+      <div class="d-flex flex-column align-items-center me-2">
+                <i class="fa-solid fa-people-group fa-xl mb-3" style="color: rgb(43, 127, 255);"></i>
+      <p class="m-0 py-1 p-color">Servings</p>
+    <p class="fw-bold m-0">2 People</p>
+      </div>
+      </div>
+    </div>
+    <div class="img-review position-absolute bg-white shadow-sm rounded-pill">
+<p class="m-0"><i class="fa-solid fa-star me-2" style="color: rgb(253, 200, 0);"></i>
+<span class="fw-bold">4.4</span> <span class="text-muted p-color">(198 reviews)</span></p>
+    </div>
+  </div>
+  <div class="hero-r col-md-12 col-lg-7 bg-white p-4 m-0">
+    <div class="menu-head mt-4">
+      <span class=" me-2 rounded-pill d-g fw-bold">Easy</span> <span class="rounded-pill d-b fw-bold">Mediterranean</span>
+<div class="d-flex justify-content-between align-items-center py-1">    
+  <h2 class="fw-bold fs-1">Caesar Salad</h2>
+<div class="d-flex">
+<div class="rounded-3 bg-icon d-flex justify-content-center align-items-center me-3"><i class="fa-solid fa-bookmark " style="color: rgb(246, 73, 0);"></i></div>
+<div class="rounded-3 bg-icon d-flex justify-content-center align-items-center"><i class="fa-solid fa-share-nodes" style="color: rgb(246, 73, 0);"></i></div>
+</div>
+</div>
+      <p class="text-secondary fs-5">Classic salad with crispy romaine and creamy dressing
+</p>
+    </div>
 
+    <div class="menu-items">
+ <!-- Tab navigation -->
+    <ul class="nav nav-tabs recipe-tabs mb-4" id="recipeTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="ingredients-tab" data-bs-toggle="tab"
+          data-bs-target="#ingredients" type="button" role="tab">
+          <i class="bi bi-list-ul"></i>Ingredients
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="instructions-tab" data-bs-toggle="tab"
+          data-bs-target="#instructions" type="button" role="tab">
+          <i class="bi bi-card-checklist"></i>Instructions
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="nutrition-tab" data-bs-toggle="tab"
+          data-bs-target="#nutrition" type="button" role="tab">
+          <i class="bi bi-cup-straw"></i>Nutrition
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tips-tab" data-bs-toggle="tab"
+          data-bs-target="#tips" type="button" role="tab">
+          <i class="bi bi-lightbulb"></i>Chef's Tips
+        </button>
+      </li>
+    </ul>
+    <hr>
+     <!-- Tab content -->
+    <div class="tab-content" id="recipeTabContent">
+ 
+      <!-- Ingredients -->
+      <div class="tab-pane fade" id="ingredients" role="tabpanel">
+        <ul class="list-unstyled">
+          <li class="step-item">1 head romaine lettuce</li>
+          <li class="step-item">Caesar dressing</li>
+          <li class="step-item">Croutons</li>
+          <li class="step-item">Parmesan cheese, shaved</li>
+          <li class="step-item">Anchovies (optional)</li>
+        </ul>
+      </div>
+ 
+      <!-- Instructions -->
+      <div class="tab-pane fade show active" id="instructions" role="tabpanel">
+        <div class="step-item">
+          <span class="step-number">1</span>
+          <div>Wash and dry romaine lettuce thoroughly. Tear into bite-sized pieces.</div>
+        </div>
+        <div class="step-item">
+          <span class="step-number">2</span>
+          <div>Place lettuce in a large salad bowl.</div>
+        </div>
+        <div class="step-item">
+          <span class="step-number">3</span>
+          <div>Add Caesar dressing and toss until evenly coated.</div>
+        </div>
+        <div class="step-item">
+          <span class="step-number">4</span>
+          <div>Add croutons and half the parmesan cheese. Toss gently.</div>
+        </div>
+        <div class="step-item">
+          <span class="step-number">5</span>
+          <div>Top with remaining parmesan shavings and anchovies if using.</div>
+        </div>
+      </div>
+ 
+      <!-- Nutrition -->
+      <div class="tab-pane fade" id="nutrition" role="tabpanel">
+        <ul class="list-unstyled">
+          <li class="step-item">Calories: 220 kcal</li>
+          <li class="step-item">Protein: 6g</li>
+          <li class="step-item">Fat: 18g</li>
+          <li class="step-item">Carbs: 9g</li>
+        </ul>
+      </div>
+ 
+      <!-- Chef's Tips -->
+      <div class="tab-pane fade" id="tips" role="tabpanel">
+        <ul class="list-unstyled">
+          <li class="step-item">Use freshly grated parmesan for the best flavor.</li>
+          <li class="step-item">Chill the salad bowl beforehand to keep lettuce crisp.</li>
+          <li class="step-item">Add dressing right before serving to avoid sogginess.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+  </div>
+</main>
 
 
 
