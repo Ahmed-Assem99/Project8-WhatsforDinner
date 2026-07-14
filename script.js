@@ -30,7 +30,7 @@ var recipesArr = [
     ratingAvg: 4.4,
     ratingQty: 198,
     recipeImg: "./images/cesar.avif",
-    prepTime: "15",
+    prepTime: 15,
     cookTime: 0,
     servingQty: "2",
     ingredients: [
@@ -69,7 +69,7 @@ var recipesArr = [
     ratingAvg: 4.5,
     ratingQty: 156,
     recipeImg: "./images/caprese.avif",
-    prepTime: "10",
+    prepTime:10,
     cookTime: 0,
     servingQty: "2",
     ingredients: [
@@ -109,7 +109,7 @@ var recipesArr = [
     ratingAvg: 4.7,
     ratingQty: 312,
     recipeImg: "./images/carbonara.avif",
-    prepTime: "10",
+    prepTime: 10,
     cookTime: 20,
     servingQty: "4",
     ingredients: [
@@ -149,7 +149,7 @@ var recipesArr = [
     ratingAvg: 4.6,
     ratingQty: 267,
     recipeImg: "./images/curry.avif",
-    prepTime: "20",
+    prepTime: 20,
     cookTime: 35,
     servingQty: "4",
     ingredients: [
@@ -189,7 +189,7 @@ var recipesArr = [
     ratingAvg: 4.8,
     ratingQty: 389,
     recipeImg: "./images/lasagna.avif",
-    prepTime: "30",
+    prepTime: 30,
     cookTime: 60,
     servingQty: "6",
     ingredients: [
@@ -229,7 +229,7 @@ var recipesArr = [
     ratingAvg: 4.5,
     ratingQty: 234,
     recipeImg: "./images/masala.avif",
-    prepTime: "20",
+    prepTime: 20,
     cookTime: 30,
     servingQty: "4",
     ingredients: [
@@ -269,7 +269,7 @@ var recipesArr = [
     ratingAvg: 4.6,
     ratingQty: 178,
     recipeImg: "./images/moussaka.avif",
-    prepTime: "35",
+    prepTime: 35,
     cookTime: 75,
     servingQty: "6",
     ingredients: [
@@ -309,7 +309,7 @@ var recipesArr = [
     ratingAvg: 4.7,
     ratingQty: 298,
     recipeImg: "./images/pad.avif",
-    prepTime: "20",
+    prepTime: 20,
     cookTime: 15,
     servingQty: "3",
     ingredients: [
@@ -349,7 +349,7 @@ var recipesArr = [
     ratingAvg: 4.6,
     ratingQty: 405,
     recipeImg: "./images/pizza.avif",
-    prepTime: "20",
+    prepTime: 20,
     cookTime: 15,
     servingQty: "4",
     ingredients: [
@@ -389,7 +389,7 @@ var recipesArr = [
     ratingAvg: 4.5,
     ratingQty: 187,
     recipeImg: "./images/pork.avif",
-    prepTime: "15",
+    prepTime: 15,
     cookTime: 30,
     servingQty: "4",
     ingredients: [
@@ -429,7 +429,7 @@ var recipesArr = [
     ratingAvg: 4.4,
     ratingQty: 142,
     recipeImg: "./images/quinoa.avif",
-    prepTime: "15",
+    prepTime: 15,
     cookTime: 15,
     servingQty: "3",
     ingredients: [
@@ -469,7 +469,7 @@ var recipesArr = [
     ratingAvg: 4.7,
     ratingQty: 256,
     recipeImg: "./images/salmon.avif",
-    prepTime: "10",
+    prepTime: 10,
     cookTime: 15,
     servingQty: "2",
     ingredients: [
@@ -509,7 +509,7 @@ var recipesArr = [
     ratingAvg: 4.6,
     ratingQty: 213,
     recipeImg: "./images/shrimp.avif",
-    prepTime: "10",
+    prepTime: 10,
     cookTime: 10,
     servingQty: "3",
     ingredients: [
@@ -549,7 +549,7 @@ var recipesArr = [
     ratingAvg: 4.3,
     ratingQty: 165,
     recipeImg: "./images/soup.avif",
-    prepTime: "15",
+    prepTime: 15,
     cookTime: 35,
     servingQty: "4",
     ingredients: [
@@ -589,7 +589,7 @@ var recipesArr = [
     ratingAvg: 4.4,
     ratingQty: 189,
     recipeImg: "./images/stir-fry.avif",
-    prepTime: "15",
+    prepTime: 15,
     cookTime: 10,
     servingQty: "3",
     ingredients: [
@@ -629,7 +629,7 @@ var recipesArr = [
     ratingAvg: 4.6,
     ratingQty: 278,
     recipeImg: "./images/tacos.avif",
-    prepTime: "15",
+    prepTime: 15,
     cookTime: 15,
     servingQty: "4",
     ingredients: [
@@ -669,7 +669,7 @@ var recipesArr = [
     ratingAvg: 4.5,
     ratingQty: 246,
     recipeImg: "./images/teriyaki.avif",
-    prepTime: "15",
+    prepTime: 15,
     cookTime: 20,
     servingQty: "4",
     ingredients: [
@@ -709,7 +709,7 @@ var recipesArr = [
     ratingAvg: 4.6,
     ratingQty: 421,
     recipeImg: "./images/burger.avif",
-    prepTime: "15",
+    prepTime: 15,
     cookTime: 20,
     servingQty: "4",
     ingredients: [
@@ -750,7 +750,7 @@ function getRandomRecipe() {
   recipeDesc.innerHTML = recipesArr[randomIndex].description;
   prepTime.innerHTML = recipesArr[randomIndex].prepTime;
   cookTime.innerHTML = recipesArr[randomIndex].cookTime;
-  if (recipesArr[randomIndex].cookTime >= 45) {
+  if ((recipesArr[randomIndex].cookTime+recipesArr[randomIndex].prepTime) >= 45) {
     warningBox.style.display = "flex";
 } else {
     warningBox.style.display = "none";
